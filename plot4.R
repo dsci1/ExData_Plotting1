@@ -85,6 +85,9 @@ print("Saving the plots as plot4.png")
 dev.copy(png, file="plot4.png", height = 480, width = 480)
 dev.off()
 
+print("Cleaning up...")
+rm(sourceTable)
+
 print("Done")
 
 

@@ -50,9 +50,13 @@ plot(sourceTable$Global_active_power ~ sourceTable$DateTime,
 print("Done")
 
 # copy the plot into file
-print("Saving the plot as plot2.png")
+print("Saving the plot as plot2.png...")
 dev.copy(png, file="plot2.png", height = 480, width = 480)
 dev.off()
+
+print("Cleaning up...")
+rm(sourceTable)
+
 print("Done")
 
 

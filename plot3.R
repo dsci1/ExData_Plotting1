@@ -63,6 +63,10 @@ print("Done")
 print("Saving the plot as plot3.png")
 dev.copy(png, file="plot3.png", height = 480, width = 480)
 dev.off()
+
+print("Cleaning up...")
+rm(sourceTable)
+
 print("Done")
 
 

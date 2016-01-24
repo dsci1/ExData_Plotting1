@@ -45,9 +45,13 @@ hist(sourceTable$Global_active_power,
      cex.lab = .8)
 
 # copy the plot into file
-print("Saving the histogram as plot1.png")
+print("Saving the histogram as plot1.png...")
 dev.copy(png, file="plot1.png", height=480, width=480)
 dev.off()
+
+print("Cleaning up...")
+rm(sourceTable)
+
 print("Done")
 
 
