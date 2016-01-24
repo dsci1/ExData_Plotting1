@@ -3,9 +3,11 @@
 ##
 
 # reset device settings
-print("Resetting device settings...")
-dev.off()
-print("Done")
+if(dev.cur() > 1) {
+    print("Resetting device settings...")
+    dev.off()
+    print("Done")
+}
 
 # set the working directory to script container
 this.dir <- dirname(parent.frame(2)$ofile)
